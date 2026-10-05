@@ -30,3 +30,7 @@ benchmark: $(BUILD_DIR)/benchmark_app
 
 clean:
 	rm -rf $(BUILD_DIR)
+
+run: $(BUILD_DIR)/test_algorithms $(BUILD_DIR)/benchmark_app
+	./$(BUILD_DIR)/test_algorithms
+	./$(BUILD_DIR)/benchmark_app 1000 5
